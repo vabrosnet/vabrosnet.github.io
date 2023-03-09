@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="C, .">
+    <meta name="keywords" content="curriculum vitae">
+    <meta name="author" content="Victor Burgos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CV online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+    <link rel="shotcut icon" href="img/logo.jpg">
+    <script src="https://kit.fontawesome.com/3dd01319d8.js" crossorigin="anonymous"></script>
+</head>
+<body class="abierto">
+
+    <a class="btn-wsp wow animated bounceInLeft" data-wow-delay="3s"
+        href="https://api.whatsapp.com/send?phone=542984413649&text=Hola+Vabros%21+Deseo+contactarte." target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.html" class="enlace">
+            <img src="img/logo.jpg" alt="" class="logo">
+        </a>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+
+    </nav>
+    
+    <section>
+
+        <div class="container-full">
+            <div class="fila columna margen-arriba">
+                <div class="columna columna-100 centrar-texto">
+                    <h2 class="titulos">CONTACTO</h2>
+                </div>
+            </div>
+            <div class="fila margen-arriba">
+                <div class="columna columna-50 columna-mb-100">
+                    <form  id="frmcontacto" action="registro.php" method="post">
+                        <div class="form-bloques">
+                            <input id="nombre" class="form-input" required type="text" placeholder="Nombre" name="nombre" required>
+                        </div>
+                        <div class="form-bloques">
+                            <input id="email" class="form-input" required type="email" placeholder="Email" name="email" required>
+                        </div>
+                        <div class="form-bloques">
+                            <input id="telefono" class="form-input" required type="text" placeholder="Teléfono" name="telefono" required>
+                        </div>
+                        <div class="form-bloques">
+                            <textarea id="mensaje"  class="form-input" required  name="mensaje" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <div class="form-bloques form-bloque-boton">
+                            <input type="submit" value="ENVIAR" class="btn boton-azul btn-enviar">
+                        </div>  
+                    </form>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+    </section>
+  
+    <script src="js/funciones.js"></script>
+</body>
+</html>
